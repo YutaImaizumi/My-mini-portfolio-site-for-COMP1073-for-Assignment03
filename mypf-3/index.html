@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>Yuta Imaizumi Portfolio | Home</title>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Scripts/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Contents/app.css">
+</head>
+<body>
+
+    <!-- navigation section -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="Assets/yuta-logo.svg" alt="Yuta Imaizumi logo" id="logo"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html"><i class="fa fa-home fa-2x"></i> Home</a></li>
+        <li><a href="works.html"><i class="fa fa-laptop fa-2x"></i> Works</a></li>
+        <li><a href="contact.html"><i class="fa fa-envelope fa-2x"></i> Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- main content -->
+<div id="content">
+    <h1 id="greeting"></h1>    
+    <h1 id="myname"></h1>
+    <img src="Assets/me.gif" alt="Current pic of Yuta Imaizumi" id="mepic">
+    <h2 id="aboutme"></h2>
+
+<!-- 3 column start -->
+    <div class="container">
+
+        <!-- 3 Columns on PC and 1 column on SP -->
+        <div class="row">
+            <div class="col-xs-12 col-md-4 adjust-y">
+                <h3 id="careertitle"></h3>
+                <p id="iconcentr"><i class="fa fa-address-card fa-3x"></i></p>
+                <p id="careerp"></p>
+            </div>
+            <div class="col-xs-12 col-md-4 adjust-y">
+                <h3 id="strengthtitle"></h3>
+                <p id="iconcentr"><i class="fa fa-space-shuttle fa-3x"></i></p> 
+                <p id="strengthp"></p>      
+            </div>
+            <div class="col-xs-12 col-md-4 adjust-y">
+                <h3 id="missiontitle"></h3>
+                <p id="iconcentr"><i class="fa fa-heart fa-3x"></i></p> 
+                <p id="missionp"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer section -->
+<nav class="navbar navbar-inverse navbar-bottom" id="footerToBottom">
+  <div class="footer">
+    <h4 id="footercr"><small>&copy; 2017 - Yuta Imaizumi - All rights reserved.</small></h4>
+  </div>
+</nav>
+
+
+    <!-- JavaScript here -->
+    <script src="./Scripts/lib/jquery/dist/jquery.js"></script>
+    <script src="./Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+</html>
