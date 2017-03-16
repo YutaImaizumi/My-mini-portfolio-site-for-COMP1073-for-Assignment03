@@ -61,6 +61,16 @@
       "imgalt": "COMP1002",
       "workdetail": "The final assignment of COMP1002 (Web and Internet Fundamentals, by Mr. McCrindle) last semester. \"Making a small website promoting an actual product that was on the market before the Internet.\" I chose a letterpress and featured the beauty of paper crafts with Christmas design."
     }
+  ],
+
+
+  "contacts": [
+    {
+      "message1": "Contact",
+      "icon": "fa-envelope",
+      "message2": "Mail Form",
+      "message3": "Please feel free to contact me for any questions! ( *... Mandatory)"
+    }
   ]
 
 

@@ -130,7 +130,7 @@ let XHR = new XMLHttpRequest();
         data.workstitles.forEach(function (workstitle) {
           let newDiv = document.createElement("div");
           newDiv.innerHTML = `
-          <h2 id="works">${workstitle.message1}</h1>    
+          <h2>${workstitle.message1}</h1>    
         `;
           worksMain.appendChild(newDiv);
         }, this);
@@ -154,9 +154,57 @@ let XHR = new XMLHttpRequest();
 } // Works Page Contents end
 
 
+// Contact Page Contents start
+function LoadContactPage() {
+
+let XHR = new XMLHttpRequest();
+      XHR.open("GET", "../texts.json", true);
+      XHR.send();
+      XHR.onreadystatechange = function () {
+        if ((this.readyState === 4) && (this.status === 200)) {
+          data = JSON.parse(this.responseText);
+        }
+      };
+
+      XHR.addEventListener("load", function () {
+
+        // TOP Message
+        let contactMain = document.getElementById("contactMain");
+        data.contacts.forEach(function (contact) {
+          let newDiv = document.createElement("div");
+          newDiv.innerHTML = `
+          <h2>${contact.message1}</h2>
+          <i class="fa ${contact.icon} fa-2x"></i>
+          <h3>${contact.message2}</h3>
+          <p id="disclaimer"><small>${contact.message3}</small></p>
+        `;
+          contactMain.appendChild(newDiv);
+        }, this);
+      });
 
 
+      // Display form input data to console (assignment 2)
+      
+      (function(){
+            // Set event button 
+            SendButton.addEventListener("click", function(event){
+                event.preventDefault();
+            
+            // Form data store in variables
+            let Name = document.getElementById("Name").value;
+            let Mail = document.getElementById("Mail").value;
+            let Tel = document.getElementById("Tel").value;
+            let Message = document.getElementById("Message").value;
+            // let SendButton = document.getElementById("SendButton");
 
+            console.info("Name: " , Name);
+            console.info("Mail: " , Mail);
+            console.info("Tel: " , Tel);
+            console.info("Message: " , Message);
+            });
+        })();
+
+} // Contact Page Contents end
 
       window.onload = Start;
 })(); // IIFE finished

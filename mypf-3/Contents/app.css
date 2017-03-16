@@ -154,3 +154,7 @@ a:active {
     margin-top: 20px; 
     margin-bottom: 40px;
 }
+
+#disclaimer {
+    text-align: center;
+}
