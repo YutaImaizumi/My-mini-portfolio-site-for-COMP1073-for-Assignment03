@@ -1,0 +1,29 @@
+{
+  "greetings": [
+    {
+      "message1": "Hi! Japanese Graphic Designer Here!",
+      "message2": "Yuta Imaizumi",
+      "message3": "About Me"
+    }
+  ],
+
+  "aboutmedetails": [
+    {
+      "message1": "Career",
+      "icon": "fa-address-card",
+      "message2": "5-year graphic designer mainly based in Tokyo, Japan. After graduating a university, I worked for a travel agency as a web content master. There I was into the depth of design and web industry, and started to learn graphic design by myself. Then worked for some design firms in Japan, and now I came here to Canada to study web development academically."
+    },
+    {
+      "message1": "Strength",
+      "icon": "fa-space-shuttle",
+      "message2": "A wide range of graphic design skill, from paper media, web to smartphone and tablet UI. And a skill as an illustrator. I can draw illustrations by a variety of style. I also have experience as an art director, so I can manage whole advertising matters, include making marketing strategies, contents, copy and scenario writing in Japanese."
+    },
+    {
+      "message1": "Mission",
+      "icon": "fa-heart",
+      "message2": "Japanese-style attentiveness to the needs of my clients --- I highly understand that the design works should be the tools by which clients and their customers will fully communicate with each other, not just designers' self-satisfaction. I have confidence to fully communicate with my clients and also satisfy them."
+    }
+  ]
+
+
+}
