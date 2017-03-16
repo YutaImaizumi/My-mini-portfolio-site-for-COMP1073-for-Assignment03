@@ -64,10 +64,9 @@ function LoadPageContent() {
   }
 }
 
+let data = {};
 
 // Home Page Contents start
-
-let data = {};
 function LoadHomePage() {
 
 let XHR = new XMLHttpRequest();
@@ -112,7 +111,47 @@ let XHR = new XMLHttpRequest();
 } // Home Page Contents end
 
 
+// Works Page Contents start
+function LoadWorksPage() {
 
+let XHR = new XMLHttpRequest();
+      XHR.open("GET", "../texts.json", true);
+      XHR.send();
+      XHR.onreadystatechange = function () {
+        if ((this.readyState === 4) && (this.status === 200)) {
+          data = JSON.parse(this.responseText);
+        }
+      };
+
+      XHR.addEventListener("load", function () {
+
+        // TOP H2
+        let worksMain = document.getElementById("worksMain");
+        data.workstitles.forEach(function (workstitle) {
+          let newDiv = document.createElement("div");
+          newDiv.innerHTML = `
+          <h2 id="works">${workstitle.message1}</h1>    
+        `;
+          worksMain.appendChild(newDiv);
+        }, this);
+
+        // 3 column
+        let worksDetails = document.getElementById("worksDetails");
+        data.worksdetails.forEach(function (worksdetail) {
+          let newDiv = document.createElement("div");
+          newDiv.innerHTML = `
+          <div class="col-xs-12 col-md-4 adjust-y">
+            <p id="iconcentr"><i class="fa ${worksdetail.icon} fa-3x"></i></p>
+            <h3>${worksdetail.company}</h3>    
+            <a href="${worksdetail.url}" rel="external" title="${worksdetail.urltitle}"><img id="worksimg" src="${worksdetail.imgpath}" alt="${worksdetail.imgalt}" /></a>
+            <p>${worksdetail.workdetail}</p>
+          </div>
+        `;
+          worksDetails.appendChild(newDiv);
+        }, this);
+
+      });
+} // Works Page Contents end
 
 
 
