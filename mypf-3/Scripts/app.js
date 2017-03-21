@@ -147,7 +147,7 @@ let XHR = new XMLHttpRequest();
           <div class="col-xs-12 col-md-4 adjust-y">
             <p id="iconcentr"><i class="fa ${worksdetail.icon} fa-3x"></i></p>
             <h3>${worksdetail.company}</h3>    
-            <a href="Assets/${worksdetail.url}" rel="external" title="${worksdetail.urltitle}"><img id="worksimg" src="${worksdetail.imgpath}" alt="${worksdetail.imgalt}" /></a>
+            <a href="${worksdetail.url}" rel="external" title="${worksdetail.urltitle}"><img id="worksimg" src="${worksdetail.imgpath}" alt="${worksdetail.imgalt}" /></a>
             <p>${worksdetail.workdetail}</p>
           </div>
         `;
