@@ -1,6 +1,13 @@
+/* This is my original JavaScript data (Assignment 3). 
+   This time, I created function using AJAX to read JSON file.
+   File name : app.js
+   Author's name : Yuta Imaizumi #200333869
+   Web site name : Yuta Imaizumi Portfolio */
+   
+
 "use strict";
 
-(function () { // IIFE started
+(function () { // IIFE start
 
 function Start() {
   LoadNavBar();
@@ -11,11 +18,8 @@ function Start() {
 function LoadNavBar() {
   let mainNav = document.getElementById("mainNav");
     let navbarHTML;
-
     let navXHR = new XMLHttpRequest();
-
     navXHR.open("GET", "../navbar.html", true);
-
     navXHR.send();
 
     navXHR.onreadystatechange = function() {
