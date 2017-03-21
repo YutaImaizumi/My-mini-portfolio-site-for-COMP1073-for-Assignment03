@@ -19,7 +19,7 @@ function LoadNavBar() {
   let mainNav = document.getElementById("mainNav");
     let navbarHTML;
     let navXHR = new XMLHttpRequest();
-    navXHR.open("GET", "../navbar.html", true);
+    navXHR.open("GET", "./navbar.html", true);
     navXHR.send();
 
     navXHR.onreadystatechange = function() {
@@ -74,7 +74,7 @@ let data = {};
 function LoadHomePage() {
 
 let XHR = new XMLHttpRequest();
-      XHR.open("GET", "../texts.json", true);
+      XHR.open("GET", "./texts.json", true);
       XHR.send();
       XHR.onreadystatechange = function () {
         if ((this.readyState === 4) && (this.status === 200)) {
@@ -119,7 +119,7 @@ let XHR = new XMLHttpRequest();
 function LoadWorksPage() {
 
 let XHR = new XMLHttpRequest();
-      XHR.open("GET", "../texts.json", true);
+      XHR.open("GET", "./texts.json", true);
       XHR.send();
       XHR.onreadystatechange = function () {
         if ((this.readyState === 4) && (this.status === 200)) {
@@ -162,7 +162,7 @@ let XHR = new XMLHttpRequest();
 function LoadContactPage() {
 
 let XHR = new XMLHttpRequest();
-      XHR.open("GET", "../texts.json", true);
+      XHR.open("GET", "./texts.json", true);
       XHR.send();
       XHR.onreadystatechange = function () {
         if ((this.readyState === 4) && (this.status === 200)) {
